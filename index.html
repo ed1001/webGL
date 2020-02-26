@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="1240" height="680"></canvas>
+    <div class="custom-select" style="width:200px;">
+    </div>
+    <label for="vertices">Number of vertices to render:</label>
+    <select id="vertices"></select>
+    <div class="slidecontainer">
+      <label for="rotation-z">Rotate speed Z</label>
+      <input type="range" min="0" max="100" value="0" class="slider" id="rotation-z">
+    </div>
+    <div class="slidecontainer">
+      <label for="rotation-y">Rotate speed Y</label>
+      <input type="range" min="0" max="100" value="0" class="slider" id="rotation-y">
+    </div>
+    <div class="slidecontainer">
+      <label for="distance">Distance</label>
+      <input type="range" min="0" max="100" value="0" class="slider" id="distance">
+    </div>
+    <div class="slidecontainer">
+      <label for="color">Oscillate Colours</label>
+      <input type="checkbox" id="color">
+    </div>
+  </body>
+  <script src="htmlRender.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gl-matrix@3/gl-matrix.js"></script>
+  <script type="text/javascript" src="buffer.js"></script>
+  <script type="text/javascript" src="shaders.js"></script>
+  <script type="text/javascript" src="draw.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</html>
